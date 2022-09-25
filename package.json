@@ -1,0 +1,11 @@
+{
+  "name": "discord-rhodey-bot",
+  "author": "Jacob Lee <jacob@polybit.com>",
+  "publish": false,
+  "dependencies": {
+    "lib": "latest",
+    "luxon": "^1.26.0",
+    "axios": "^0.21.1",
+    "@andrewsosa/destiny2api": "^0.1.1"
+  }
+}

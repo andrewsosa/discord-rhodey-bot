@@ -1,0 +1,68 @@
+{
+  "name": "andrewsosa/discord-rhodey-bot",
+  "timeout": 10000,
+  "connector": false,
+  "events": {
+    "functions/events/discord/bot_mention.js": {
+      "name": "discord.bot_mention"
+    },
+    "functions/events/scheduler/weekly-challenges.js": {
+      "name": "scheduler.weekly",
+      "subtype": {
+        "weekday": "Tuesday",
+        "time": "14:00 (2:00pm)",
+        "timezone": "America — New York, US (-05:00, -04:00 DST)"
+      }
+    },
+    "functions/events/discord/command/create-events.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "create-events"
+      }
+    },
+    "functions/events/discord/command/raid-challenges.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "raid-challenges"
+      }
+    },
+    "functions/events/scheduler/weekly-events.js": {
+      "name": "scheduler.weekly",
+      "subtype": {
+        "weekday": "Tuesday",
+        "time": "13:00 (1:00pm)",
+        "timezone": "America — New York, US (-05:00, -04:00 DST)"
+      }
+    }
+  },
+  "env": [
+    {
+      "name": "DEFAULT_CHANNEL_ID",
+      "description": ""
+    },
+    {
+      "name": "DEFAULT_GUILD_ID",
+      "description": ""
+    },
+    {
+      "name": "BUNGIE_API_KEY",
+      "description": ""
+    },
+    {
+      "name": "SESH_CHANNEL_ID",
+      "description": "Channel ID where sesh commands will be run"
+    },
+    {
+      "name": "RAID_CHANNEL_ID",
+      "description": "Channel ID for posting raid content"
+    },
+    {
+      "name": "VOICE_CHANNEL_ID",
+      "description": "Channel to point events at"
+    },
+    {
+      "name": "DISCORD_BOT_TOKEN",
+      "description": ""
+    }
+  ]
+}
